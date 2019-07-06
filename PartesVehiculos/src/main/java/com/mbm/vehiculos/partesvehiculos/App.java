@@ -20,13 +20,13 @@ public class App {
 		v1.setModelo("911");
 
 		
-		 Vehiculo v2 = (Vehiculo) appContext.getBean("vehiculo"); 
-		 v2.setMarca("Seat");
-		 v2.setModelo("Marbella");
+//		 Vehiculo v2 = (Vehiculo) appContext.getBean("vehiculo"); 
+//		 v2.setMarca("Seat");
+//		 v2.setModelo("Marbella");
 		 
 
 		System.out.println(v1);
-		System.out.println(v2);
+//		System.out.println(v2);
 
 		((ConfigurableApplicationContext) appContext).close();
 
