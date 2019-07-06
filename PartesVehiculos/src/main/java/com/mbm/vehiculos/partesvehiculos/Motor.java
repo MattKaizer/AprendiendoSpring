@@ -62,7 +62,7 @@ public class Motor {
 
 	@Override
 	public String toString() {
-		return "Motor [cilindrada=" + cilindrada + ", culata=" + culata + ", bloque=" + bloque + ", carter=" + carter
+		return " [cilindrada=" + cilindrada + ", culata=" + culata + ", bloque=" + bloque + ", carter=" + carter
 				+ "]";
 	}
 }

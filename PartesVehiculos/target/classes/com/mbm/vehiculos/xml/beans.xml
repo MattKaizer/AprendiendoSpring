@@ -3,7 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="vehiculo" class="com.mbm.vehiculos.partesvehiculos.Vehiculo">
+<!-- Usando un scope distinto al singleton logro cambiar el ambito de un bean, y de esta manera, al crear objetos
+apuntan a distintas posiciones de memoria logrando conseguir ambos -->
+
+	<bean id="vehiculo" class="com.mbm.vehiculos.partesvehiculos.Vehiculo" scope="prototype">
 		<property name="marca" value="Mercedes Benz"></property>
 		<property name="modelo" value="Clase C"></property>
 		<property name="motor" ref="motor"></property>
