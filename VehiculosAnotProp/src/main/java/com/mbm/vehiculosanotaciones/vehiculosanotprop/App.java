@@ -4,16 +4,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )  {
-        
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
 		ApplicationContext appContext = new ClassPathXmlApplicationContext(
-				"com/mbm/vehiculos2/xml/beans.xml");
+				"com/mbm/vehiculosanotprop/xml/beans.xml");
 
 //		Vehiculo v1 = (Vehiculo) appContext.getBean("vehiculo");
 //		v1.setMarca("Porsche");
@@ -38,6 +35,6 @@ public class App
 		System.out.println(v1.getInfo());
 		
 		((ConfigurableApplicationContext) appContext).close();
-    	
-    }
+	}
+
 }
