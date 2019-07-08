@@ -31,8 +31,13 @@ public class App
 //		((ConfigurableApplicationContext) appContext).close();
 		
 		Vehiculo v1 = (Vehiculo) appContext.getBean("vehiculo");
+		v1.setTipo("coche");
+		v1.setMarca("seat");
+		v1.setModelo("marbella");
 		
+		System.out.println(v1.getInfo());
 		
+		((ConfigurableApplicationContext) appContext).close();
     	
     }
 }

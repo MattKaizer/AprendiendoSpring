@@ -1,6 +1,9 @@
 package com.mbm.vehiculosanotaciones.vehiculosanotprop;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.mbm.vehiculosanotprop.interfaces.I_itv;
 
 @Component
 public class Vehiculo {
@@ -10,16 +13,20 @@ public class Vehiculo {
 	private String marca;
 	private String modelo;
 	private Motor motor;
+	private I_itv informeNuevo;
 	
 	
 //	public Vehiculo() { }
-//
-//	public Vehiculo(String tipo, String marca, String modelo, Motor motor) {
-//		this.marca = marca;
-//		this.modelo = modelo;
+
+	@Autowired
+	public Vehiculo(String tipo, String marca, String modelo, I_itv informeNuevo) {
+		this.marca = marca;
+		this.modelo = modelo;
 //		this.motor = motor;
-//		this.tipo = tipo;	
-//	}
+		this.tipo = tipo;
+		this.informeNuevo = informeNuevo;
+
+	}
 
 	public String getMarca() {
 		return marca;
@@ -54,13 +61,8 @@ public class Vehiculo {
 		this.tipo = tipo;
 	}
 	
-
-	public InformeItv getInforme() {
-		return informe;
-	}
-
-	public void setInforme(InformeItv informe) {
-		this.informe = informe;
+	public String getInfo() {
+		return informeNuevo.getEstadoBloque();
 	}
 
 	@Override

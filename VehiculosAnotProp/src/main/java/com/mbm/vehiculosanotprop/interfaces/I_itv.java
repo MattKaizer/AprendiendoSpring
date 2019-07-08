@@ -1,6 +1,6 @@
 package com.mbm.vehiculosanotprop.interfaces;
 
-public interface Itv {
+public interface I_itv {
 	
 	public String getEstadoMotor();
 	public String getEstadoCulata();
