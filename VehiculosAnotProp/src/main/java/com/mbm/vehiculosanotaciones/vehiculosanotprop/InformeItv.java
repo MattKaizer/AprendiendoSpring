@@ -1,7 +1,10 @@
 package com.mbm.vehiculosanotaciones.vehiculosanotprop;
 
+import org.springframework.stereotype.Component;
+
 import com.mbm.vehiculosanotprop.interfaces.Itv;
 
+@Component
 public class InformeItv implements Itv{
 	
 	

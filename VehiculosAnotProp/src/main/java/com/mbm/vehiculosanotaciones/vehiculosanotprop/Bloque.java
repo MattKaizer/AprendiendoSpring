@@ -1,6 +1,8 @@
 package com.mbm.vehiculosanotaciones.vehiculosanotprop;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Bloque {
 	
 	private int cantidadCilindros;
